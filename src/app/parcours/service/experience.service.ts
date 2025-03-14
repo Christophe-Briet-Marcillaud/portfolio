@@ -8,7 +8,6 @@ export interface Experience {
   dateFin: string;
   titre: string;
   description: string;
-  descriptionDetaillee: string; // NEW: More in-depth description
   type: 'entreprise' | 'formation';
   imageUrl: string;
   websiteUrl?: string; // NEW: Optional link to a website
@@ -30,10 +29,10 @@ export class ExperienceService {
       dateFin: 'Août 2025',
       titre: 'Alternance en développement\ninformatique',
       description: 'Chez 2MoRO Sopra Steria Group à Bidart',
-      descriptionDetaillee: '',
       type: 'entreprise',
       imageUrl: 'assets/images/twomoro.jpg',
-      websiteUrl: 'https://2moro.fr'
+      websiteUrl: 'https://2moro.fr',
+      etablissementPresentation: '2MoRO est une entreprise éditrice de logiciel de maintenance pour l\'Aéronautique et la défense appartenant au Groupe Sopra Steria'
     },
     {
       id:'stage',
@@ -41,7 +40,6 @@ export class ExperienceService {
       dateFin: 'Août 2023',
       titre: 'Stage en développement informatique',
       description: 'Chez 2MoRO Sopra Steria Group à Bidart',
-      descriptionDetaillee: '',
       type: 'entreprise',
       imageUrl: 'assets/images/twomoro.jpg',
       websiteUrl: 'https://2moro.fr'
@@ -52,7 +50,6 @@ export class ExperienceService {
       dateFin: 'Août 2025',
       titre: 'Master en Ingénierie du Logiciel',
       description: 'Dans le Groupe ESIEA sur le campus de Dax',
-      descriptionDetaillee: '',
       type: 'formation',
       imageUrl: 'assets/images/esiea.png',
       websiteUrl: 'https://www.esiea.fr',
@@ -65,7 +62,6 @@ export class ExperienceService {
       dateFin: 'Juillet 2020',
       titre: 'Mise à niveau en hôtellerie-restauration',
       description: 'À l\'École hôtelière de Biarritz',
-      descriptionDetaillee: '',
       type: 'formation',
       imageUrl: 'assets/images/lycee.png',
       websiteUrl: 'https://ecolehotelierebiarritz.fr'
@@ -76,7 +72,6 @@ export class ExperienceService {
       dateFin: 'Juillet 2019',
       titre: 'Baccalauréat Scientifique',
       description: 'Au Lycée Saint Joseph à Hasparren',
-      descriptionDetaillee: '',
       type: 'formation',
       imageUrl: 'assets/images/lycee_bac.jpg',
       websiteUrl: 'https://st-joseph-hasparren.fr'
