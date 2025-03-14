@@ -57,7 +57,7 @@ export class ExperienceService {
       imageUrl: 'assets/images/esiea.png',
       websiteUrl: 'https://www.esiea.fr',
       etablissementPresentation: 'L\'ESIEA est une école privée formant des ingénieurs. Elle propose différentes formations dont le cursus Master en Ingénierie du Logiciel que j\'ai intégré ' +
-        'mais aussi un cursus de Master en Ingénierie des systèmes d\'information avec les deux dernières années en alternance.'
+        'mais aussi un cursus de Master en Ingénierie des systèmes d\'information pour les personnes souhaitant travailler dans le domaine du réseau. Les deux dernières années de cette formation sont en alternance.'
     },
     {
       id:'mise_a_niveau',

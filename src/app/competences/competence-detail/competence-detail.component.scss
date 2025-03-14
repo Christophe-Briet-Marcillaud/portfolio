@@ -63,6 +63,21 @@
       letter-spacing: 0.025em;
     }
 
+    /* Style for pre tags */
+    pre {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #555;
+      text-align: justify;
+      white-space: pre-wrap;       /* CSS3: Breaks words to fit container */
+      word-wrap: break-word;       /* Old versions of IE */
+      font-family: inherit;       /* Use the same font as the surrounding text */
+      background-color: transparent; /* Remove background color */
+      border: none;                /* Remove border */
+      padding: 0;                 /* Remove padding */
+      margin: 0;                  /* Remove margin */
+    }
+
     p {
       font-size: 1.15rem;
       line-height: 1.7;
@@ -109,5 +124,4 @@
       }
     }
   }
-
 }

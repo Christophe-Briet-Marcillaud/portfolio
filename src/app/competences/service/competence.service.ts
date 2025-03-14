@@ -111,16 +111,22 @@ export class CompetenceService {
         'J’ai mis en pratique Angular pour la première fois lors du développement du projet Link & Trade durant mon quatrième semestre. \n' +
         'Le but était de reproduire un site de vente type Vinted réservé à des lycéens. \n' +
         'Durant ce projet, je me suis occupé de la partie affichage globale des annonces et le tri de ces dernières par catégorie (exemple : vêtements, livres, …). \n' +
-        'Afin de mettre l’affichage global, j’ai utilisé une boucle spécifique à Angular nommé « *ngFor ». Concernant le tri, je l’ai mis en place dans la partie affichage une condition prenant en paramètre le type de la catégorie lors du choix de l’utilisateur à l’aide d’une balise unique à Angular « *ngIf ». Ces deux balises permettent de lier du code html gérant uniquement l’affichage et d’y ajouter une logique avec TypeScript. \n' +
+        'Afin de mettre en place l’affichage global, j’ai utilisé une boucle spécifique à Angular nommée « *ngFor ». \n' +
+        'Concernant le tri, je l’ai mis en place dans la partie affichage avec une condition prenant en paramètre le type de la catégorie lors du choix de l’utilisateur à l’aide d’une balise unique à Angular « *ngIf ». \n' +
+        'Ces deux balises permettent de lier du code html gérant uniquement l’affichage et d’y ajouter une logique avec TypeScript. \n' +
         'J’ai également travaillé sur la page d’administration des annonces qui comportait différents onglets comme la validation des annonces, les annonces validées et les annonces refusées sur lesquels j’ai géré l’affichage de la même manière que cité au-dessus.\n' +
         'Ensuite, lors de mon cinquième semestre, j’ai continué à travailler avec Angular sur le projet GeoSavior. Il avait pour but de réaliser une application mobile de sauvetage d’animaux marins. \n' +
         'Cette application nécessitait un panel d’administration accessible sur le web par notre commanditaire. \n' +
         'Mes camarades et moi avons décidé de réaliser ce panel administrateur avec Angular. \n' +
         'M’étant occupé de la partie concernant les centres médicaux spécialisés dans les animaux marins, j’ai réalisé la page d’ajouts, suppression et mise à jour des informations de ces derniers. \n' +
-        'Dans la page d’ajouts et de mise à jour, j’ai réalisé un fichier service qui permettait de réaliser des appels aux différentes API que j’avais développé en Java pour permettre d’envoyer les données du formulaires au serveur. Ces formulaires contenaient une validation vérifiant la non-nullité des champs obligatoires et affichait une notification confirmant l’ajout ou la mise à jour. En ce qui concerne la suppression, j’ai ajouté une pop-up de confirmation qui demande si l’administrateur veut réellement supprimer ce centre médical. \n' +
-        'Pour réaliser cette pop-up et cette notification, j’ai crée un fichier Angular implémentant une librairie externe qui permettait de simplifier la création de ces dernières pour en faire un modèle que j’ai ensuite personnalisé dans chacun des cas dont j’ai parlé.\n' +
+        'Dans la page d’ajouts et de mise à jour, j’ai réalisé un fichier service qui permettait de réaliser des appels aux différentes API que j’avais développé en Java pour permettre d’envoyer les données du formulaires au serveur. \n' +
+        'Ces formulaires contenaient une validation vérifiant la non-nullité des champs obligatoires et affichaient une notification confirmant l’ajout ou la mise à jour du centre. \n' +
+        'En ce qui concerne la suppression, j’ai ajouté une pop-up de confirmation qui demande si l’administrateur veut réellement supprimer ce centre médical. \n' +
+        'Pour réaliser cette pop-up et cette notification, j’ai créé un fichier Angular implémentant une librairie externe qui permet de simplifier la création de ces dernières pour en faire un modèle que j’ai ensuite personnalisé dans chacun des cas dont j’ai parlé.\n' +
         'Lors de mon stage et mon alternance chez 2MoRO, j’ai travaillé sur le logiciel Aero-Webb. \n' +
-        'J’ai développé un écran intermédiaire servant d’onglet à d’autres parties de la page qui permet de lancer un test de qualité de données. Lors de l’appui sur le bouton, un appel est lancé vers le serveur qui va lancer l’analyse de la base et renvoyer des informations ainsi qu’un PDF que j’ai rendu téléchargeable grâce à l’implémentation d’un attribut en Angular nommé « download ». \n' +
+        'J’ai développé un écran intermédiaire servant d’onglet à d’autres parties de la page qui permet de lancer un test de qualité de données. \n' +
+        'Lors de l’appui sur le bouton, un appel est lancé vers le serveur qui va lancer l’analyse de la base et renvoyer des informations. \n' +
+        'J’ai aussi ajouté un PDF que j’ai rendu téléchargeable grâce à l’implémentation d’un attribut en Angular nommé « download ». \n' +
         'J’ai ajouté plusieurs éléments améliorant l’ergonomie de la page comme un affichage de couleurs différentes selon le résultat du test, la désactivation des boutons lors du lancement du test et une icône indiquant le chargement pour que l’utilisateur ait une indication visuelle de l’action qu’il vient de lancer.\n' +
         'Réaliser ces différents travaux m’a permis de gagner de l’expérience sur l’utilisation et la mise en place d’Angular et de me rendre compte qu’une fois que l’on sait l’utiliser c’est un Framework très puissant.\n',
       autocritique: 'En tant que membre de l’équipe architecture, connaître le fonctionnement du Framework utilisé pour le Frontend de l’application est nécessaire à la compréhension des différentes missions que je peux être amené à réaliser. \n' +
@@ -138,7 +144,7 @@ export class CompetenceService {
         'Il est prévu qu’Aero-Webb passe sous Angular 17 ce qui me permettra de découvrir de nouvelles fonctionnalités et de gérer le code différemment de celui que j’ai appris à l’école et également lors de mon arrivée chez 2MoRO.\n' +
         'Afin d’approfondir mes compétences en Angular, je souhaiterai suivre cette formation en ligne : https://www.orsys.fr/formation-angular-developpement-avance.html\n',
       imageUrl: 'assets/images/angular.png',
-      realisations: ['link_n_trade', 'geoSavior', 'aeroWebb']
+      realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
     {
       id: 'sql',
