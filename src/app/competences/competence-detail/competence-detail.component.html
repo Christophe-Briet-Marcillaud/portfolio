@@ -1,0 +1,33 @@
+<div *ngIf="competence" class="competence-detail">
+  <header class="competence-header">
+    <div class="image-container">
+      <img [src]="competence.imageUrl" [alt]="competence.nom">
+    </div>
+    <h2>{{ competence?.nom }}</h2>
+    <div class="competence-info">
+      <span class="competence-type">{{ competence?.type | uppercase }}</span> |
+      <span class="competence-niveau">Niveau: {{ competence?.niveau }}</span>
+    </div>
+  </header>
+
+  <section class="competence-section">
+    <h3>Définition</h3>
+    <p>{{ competence?.definition }}</p>
+  </section>
+
+  <section class="competence-section">
+    <h3>Éléments de preuve</h3>
+    <p>{{ competence?.element_preuve }}</p>
+  </section>
+
+
+  <section class="competence-section">
+    <h3>Autocritique</h3>
+    <p>{{ competence?.autocritique }}</p>
+  </section>
+
+  <section class="competence-section">
+    <h3>Évolution prévue</h3>
+    <p>{{ competence?.evolution }}</p>
+  </section>
+</div>

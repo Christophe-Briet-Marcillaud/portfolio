@@ -1,0 +1,19 @@
+<div class="container">
+  <section class="realisation-list">
+    <h2>Mes Réalisations</h2>
+    <div class="realisation-grid">
+      <a *ngFor="let realisation of realisations" class="realisation-card" [routerLink]="['/realisations', realisation.id]">
+        <div class="realisation-image">
+          <img [src]="realisation.imageUrl" [alt]="realisation.titre">
+        </div>
+        <div class="realisation-card-content">
+          <h3>{{ realisation.titre }}</h3>
+          <p>{{ realisation.presentation }}</p>
+        </div>
+        <div class="realisation-card-footer">
+          Voir le détail
+        </div>
+      </a>
+    </div>
+  </section>
+</div>

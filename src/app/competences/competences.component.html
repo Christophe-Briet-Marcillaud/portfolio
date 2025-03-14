@@ -1,0 +1,59 @@
+<div class="competence-list">
+  <h2>Mes Compétences</h2>
+
+  <section class="competence-section">
+    <h3>Compétences Techniques</h3>
+    <div class="competence-grid-technique">
+      <a [routerLink]="['/competences', competence.id]" class="competence-card" *ngFor="let competence of competencesTechniques">
+        <div class="competence-card-inner">
+          <div class="competence-card-header">
+            <img *ngIf="competence.imageUrl" [src]="competence.imageUrl" alt="{{ competence.nom }}" class="competence-image">
+            <h3>{{ competence.nom }}</h3>
+          </div>
+
+          <div class="competence-card-body">
+            <!-- Affichage du niveau de maîtrise -->
+            <div class="niveau-maitrise">
+              Niveau :
+              <span [class]="'niveau-' + competence.niveau">{{ competence.niveau }}</span>
+            </div>
+
+<!--            <p>{{ competence.definition }}</p>-->
+          </div>
+
+          <div class="competence-card-footer">
+            Voir le détail
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="competence-section">
+    <h3>Compétences Humaines</h3>
+    <div class="competence-grid-humaine">
+      <a [routerLink]="['/competences', competence.id]" class="competence-card" *ngFor="let competence of competencesHumaines">
+        <div class="competence-card-inner">
+          <div class="competence-card-header">
+            <img *ngIf="competence.imageUrl" [src]="competence.imageUrl" alt="{{ competence.nom }}" class="competence-image">
+            <h3>{{ competence.nom }}</h3>
+          </div>
+
+          <div class="competence-card-body">
+            <!-- Affichage du niveau de maîtrise -->
+            <div class="niveau-maitrise">
+              Niveau :
+              <span [class]="'niveau-' + competence.niveau">{{ competence.niveau }}</span>
+            </div>
+
+<!--            <p>{{ competence.definition }}</p>-->
+          </div>
+
+          <div class="competence-card-footer">
+            Voir le détail
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+</div>

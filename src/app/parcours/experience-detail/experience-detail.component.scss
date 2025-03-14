@@ -1,0 +1,77 @@
+.experience-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+
+  .experience-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .date {
+      font-size: 1.1rem;
+      color: #777;
+    }
+  }
+
+  .experience-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .experience-content {
+    h3 {
+      font-size: 1.8rem;
+      color: var(--dark-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Center the website button */
+    .website-button {
+      display: block; /* Make it block level for centering */
+      margin: 1rem auto; /* Center horizontally */
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      width: fit-content; /* Make the button fit its content */
+
+      &:hover {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}

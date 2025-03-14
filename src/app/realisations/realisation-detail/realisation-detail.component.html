@@ -1,0 +1,51 @@
+<div *ngIf="realisation" class="realisation-detail">
+  <div class="realisation-header">
+    <h2>{{ realisation.titre }}</h2>
+  </div>
+
+  <div class="realisation-image-container">
+    <img [src]="realisation.imageUrl" alt="{{ realisation.titre }}">
+  </div>
+
+  <div class="realisation-content">
+
+    <h3><u>Présentation</u> : </h3>
+    <pre>{{ realisation.presentation }}</pre>
+
+    <br>
+    <h3><u>Objectifs</u> : </h3>
+    <pre>{{ realisation.objectifs }}</pre>
+
+    <br>
+    <h3><u>Étapes</u> : </h3>
+    <pre>{{ realisation.etapes }}</pre>
+
+    <br>
+    <h3><u>Acteurs</u> : </h3>
+    <pre>{{ realisation.acteurs }}</pre>
+
+    <br>
+    <h3><u>Résultats</u> : </h3>
+    <pre>{{ realisation.resultats }}</pre>
+
+    <br>
+    <h3><u>Lendemain du projet</u> : </h3>
+    <pre>{{ realisation.lendemains }}</pre>
+
+    <br>
+    <h3><u>Ce que je retiens</u> : </h3>
+    <pre>{{ realisation.regardCritique }}</pre>
+
+
+    <section class="realisation-section">
+      <h3>Compétences liées</h3>
+      <ul class="competences-list">
+        <li *ngFor="let competenceId of realisation.competences">
+          <a [routerLink]="['/competences', competenceId]">
+            {{ getCompetenceName(competenceId) }}
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

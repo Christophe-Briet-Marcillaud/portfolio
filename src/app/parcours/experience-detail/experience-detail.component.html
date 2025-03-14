@@ -1,0 +1,36 @@
+<div *ngIf="experience" class="experience-detail">
+  <div class="experience-header">
+    <h2>{{ experience.titre }}</h2>
+    <p class="date">{{ experience.dateDebut }} - {{ experience.dateFin }}</p>
+  </div>
+
+  <div class="experience-image">
+    <img [src]="experience.imageUrl" alt="{{ experience.titre }}">
+  </div>
+
+  <div class="experience-content">
+
+    <h3>Présentation de l'établissement</h3>
+    <p>{{ experience.etablissementPresentation }}</p>
+    <div *ngIf="experience.type === 'formation'">
+      <div *ngIf="experience.visionPedagogie">
+        <h3>Ma vision de la pédagogie pratiquée</h3>
+        <p>{{ experience.visionPedagogie }}</p>
+      </div>
+    </div>
+
+    <div *ngIf="experience.type === 'entreprise'">
+      <h3>Travail effectué</h3>
+      <p>{{ experience.travailEffectue }}</p>
+
+      <h3>Ma place dans l'entreprise</h3>
+      <p>{{ experience.placeEntreprise }}</p>
+    </div>
+
+    <div *ngIf="experience.websiteUrl">
+      <a [href]="experience.websiteUrl" target="_blank" rel="noopener noreferrer" class="website-button">
+        Visiter le site web
+      </a>
+    </div>
+  </div>
+</div>

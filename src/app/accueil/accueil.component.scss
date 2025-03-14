@@ -1,0 +1,122 @@
+.accueil {
+  padding: 50px 0;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .presentation {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: var(--text-color);
+    }
+  }
+
+  .valeurs {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .valeurs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+
+      .valeur-card {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        h3 {
+          font-size: 1.75rem;
+          margin-bottom: 15px;
+          color: var(--secondary-color);
+        }
+
+        p {
+          line-height: 1.6;
+          color: var(--text-color);
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .projet-professionnel,
+  .qualites-humaines,
+  .centres-interets {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: var(--text-color);
+    }
+  }
+
+  .competences-overview {
+    h3 {
+      margin-bottom: 20px;
+      font-size: 1.75rem;
+      color: var(--primary-color);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        margin: 10px 20px;
+        font-size: 1.1rem;
+        color: var(--text-color);
+        background-color: var(--light-color);
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.realisation-list {
+  padding: 60px 0;
+  background-color: var(--light-color);
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .realisation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Wider cards */
+    gap: 40px;
+    padding: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; /* One card per row on smaller screens */
+    }
+  }
+
+  .realisation-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 90%; /* Reduced card height */
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .realisation-image {
+      margin-top: 10px;
+      width: 100%;
+      height: 200px; /* Reduced image height */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex; /* Add flex layout */
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+
+      img {
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        max-height: 100%; /* Ensure image doesn't exceed container height */
+        object-fit: contain; /* Maintain aspect ratio, fit within container */
+        display: block;
+        transition: transform 0.4s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .realisation-card-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+        color: var(--dark-color);
+        text-align: center;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 1.6;
+        color: var(--text-color);
+        margin-bottom: 30px;
+        flex: 1;
+      }
+    }
+
+    .realisation-card-footer {
+      padding: 20px 25px;
+      background-color: rgba(0, 0, 0, 0.03);
+      border-top: 2px solid rgba(0, 0, 0, 0.08);
+      text-align: center;
+      font-weight: 500;
+      color: var(--primary-color);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+}

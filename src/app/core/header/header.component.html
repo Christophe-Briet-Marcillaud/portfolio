@@ -1,0 +1,76 @@
+<header class="header">
+  <div class="top-bar">
+    <div class="user-profile">
+      <a routerLink="/accueil">
+        <img src="assets/images/my-photo.jpg" alt="Votre photo" class="profile-image">
+      </a>
+      <a routerLink="/accueil">
+        <div class="user-info">
+          <span class="username">{{ prenom }} {{ nom }}</span>
+          <span class="user-title">Expert en Ingénierie du logiciel</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <ul>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a routerLink="/">
+          <mat-icon>home</mat-icon>
+          Accueil
+        </a>
+      </li>
+      <li routerLinkActive="active" [matMenuTriggerFor]="competencesMenu">
+        <a>
+          <mat-icon>code</mat-icon>
+          Compétences
+        </a>
+        <mat-menu #competencesMenu="matMenu">
+          <a mat-menu-item routerLink="/competences">Toutes les compétences</a>
+          <mat-divider></mat-divider>
+          <button mat-menu-item [matMenuTriggerFor]="techniquesMenu">Techniques</button>
+          <button mat-menu-item [matMenuTriggerFor]="humainesMenu">Humaines</button>
+        </mat-menu>
+      </li>
+      <li routerLinkActive="active" [matMenuTriggerFor]="realisationsMenu">
+        <a>
+          <mat-icon>work</mat-icon>
+          Réalisations
+        </a>
+        <mat-menu #realisationsMenu="matMenu">
+          <a mat-menu-item routerLink="/realisations">Toutes les réalisations</a>
+          <mat-divider></mat-divider>
+          <a *ngFor="let r of realisationService.getAllRealisations()" mat-menu-item
+             [routerLink]="['/realisations', r.id]">
+            {{ r.titre }}
+          </a>
+        </mat-menu>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/parcours">
+          <mat-icon>timeline</mat-icon>
+          Parcours
+        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/contact">
+          <mat-icon>mail</mat-icon>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Sous-menus Compétences Techniques et Humaines (comme précédemment) -->
+  <mat-menu #techniquesMenu="matMenu">
+    <a *ngFor="let c of competencesTechniques" mat-menu-item [routerLink]="['/competences', c.id]">
+      {{ c.nom }}
+    </a>
+  </mat-menu>
+  <mat-menu #humainesMenu="matMenu">
+    <a *ngFor="let c of competencesHumaines" mat-menu-item [routerLink]="['/competences', c.id]">
+      {{ c.nom }}
+    </a>
+  </mat-menu>
+</header>

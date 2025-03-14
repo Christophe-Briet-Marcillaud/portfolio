@@ -1,0 +1,174 @@
+.parcours {
+  padding: 50px 0;
+  background-color: var(--light-color);
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    .line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      background-color: var(--primary-color);
+      height: 100%;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 0;
+      transform: translateX(-45%);
+
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 20px solid var(--primary-color);
+    }
+
+    .experience {
+      position: relative;
+      margin-bottom: 50px;
+
+      /* Positionnement alterné */
+      &:nth-child(odd) {
+        .content {
+          text-align: left;
+          margin-left: 200px;
+        }
+      }
+
+      &:nth-child(even) {
+        .content {
+          text-align: right;
+          margin-right: 200px;
+        }
+      }
+
+      .date {
+        position: absolute;
+        top: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* Styles différents pour formation et entreprise */
+        &.formation {
+          border-top: 5px solid var(--secondary-color); /* Ligne verticale pour formation */
+        }
+
+        &.entreprise {
+          border-top: 5px solid var(--primary-color); /* Ligne verticale pour entreprise */
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          color: var(--dark-color);
+          text-align: center;
+        }
+
+        p {
+          line-height: 1.6;
+          color: var(--text-color);
+          text-align: center;
+        }
+      }
+
+      /* Style de l'image */
+      .experience-image {
+        position: absolute;
+        top: -40px; /* Positionner l'image au-dessus du bloc content */
+        width: 200px;
+        height: 100px;
+        border-radius: 10%;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1; /* S'assurer que l'image est au-dessus de la bordure du content */
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        /* Positionnement de l'image selon le type d'expérience */
+      }
+
+      /* Styles pour le positionnement de l'image (expérience impaire) */
+      /* Modification : suppression des marges fixes et utilisation de calc() */
+      &:nth-child(odd) {
+        .content {
+          margin-left: calc(120px); /* Marge fixe */
+          align-items: flex-start;
+          text-align: left;
+        }
+
+        .experience-image {
+          right: calc(-50px); /* Ajustement de l'image */
+        }
+      }
+
+      /* Styles pour le positionnement de l'image (expérience paire) */
+      /* Modification : suppression des marges fixes et utilisation de calc() */
+      &:nth-child(even) {
+        .content {
+          margin-right: calc(120px); /* Marge fixe */
+          align-items: flex-end;
+          text-align: right;
+        }
+
+        .experience-image {
+          left: calc(-50px); /* Ajustement de l'image */
+        }
+      }
+
+      /* Style de type */
+      .experience-type {
+        font-style: italic;
+        font-size: 0.8em;
+        margin-top: 0.3em;
+        color: var(--text-color);
+      }
+    }
+  }
+
+  /* Style the detail button */
+  .detail-button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+}

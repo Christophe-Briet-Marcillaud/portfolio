@@ -1,1 +1,117 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Variables de couleurs (pour faciliter la modification) */
+//:root {
+//  --primary-color: #ff7043; /* Orange */
+//  --secondary-color: #e64a19; /* Orange foncé */
+//  --light-color: #fbe9e7; /* Beige clair */
+//  --dark-color: #212121; /* Noir */
+//  --text-color: #757575; /* Gris moyen */
+//}
+:root {
+  --primary-color: #009dff; /* Orange */
+
+  --secondary-color: #a1887f; /* Brun */
+
+  --light-color: #eceff1; /* Gris Très Clair */
+
+  --dark-color: #37474f; /* Gris Foncé Bleuté */
+
+  --text-color: #546e7a; /* Gris Bleuté */
+}
+
+
+
+
+
+
+
+
+
+/* Reset CSS (pour uniformiser les styles entre les navigateurs) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Styles pour les liens */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+}
+
+/* Styles pour les titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* Styles pour les sections */
+section {
+  padding: 40px 0;
+}
+
+/* Styles pour les listes */
+ul, ol {
+  margin-bottom: 1rem;
+}
+
+/* Styles pour les paragraphes */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Styles pour les boutons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}

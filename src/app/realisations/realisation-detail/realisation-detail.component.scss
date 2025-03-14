@@ -1,0 +1,104 @@
+.realisation-detail {
+  max-width: 60%;
+  margin: 2rem auto;
+  padding: 2%;
+  background-color: #fff;
+  color: #333;
+  overflow-x: auto;
+  text-align: justify;
+  text-justify: inter-word;
+
+  .realisation-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    letter-spacing: -0.05rem;
+  }
+
+  /* Style the image container */
+  .realisation-image-container {
+    width: 100%;
+    max-width: 400px; /* Adjusted for medium size */
+    margin: 0 auto 2rem; /* Center horizontally */
+    overflow: hidden;
+    text-align: center; /* Ensure image is centered if smaller than container */
+  }
+
+  img {
+    max-width: 100%; /* Ensure image doesn't exceed container */
+    max-height: 300px;
+    display: inline-block; /* Allows centering */
+    object-fit: contain; /* Preserves aspect ratio */
+  }
+
+  .realisation-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.4rem;
+    letter-spacing: -0.025rem;
+  }
+
+  pre {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 0.8rem;
+    font-family: 'Arial', sans-serif;
+    overflow-x: auto;
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .realisation-section {
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 1.5rem;
+      color: var(--dark-color);
+      margin-bottom: 0.8rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 0.4rem;
+      letter-spacing: -0.025rem;
+    }
+  }
+
+  .competences-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    li {
+      a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: var(--primary-color);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        font-size: 0.9rem;
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
