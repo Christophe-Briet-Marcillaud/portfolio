@@ -11,7 +11,6 @@ import {RealisationService} from '../../realisations/service/realisation.service
 export class HeaderComponent {
   prenom = 'Christophe';
   nom = 'Briet-Marcillaud';
-  photoUrl = 'assets/images/my-photo.jpg';
 
   competencesTechniques: Competence[] = [];
   competencesHumaines: Competence[] = [];
