@@ -32,7 +32,7 @@ export class ExperienceService {
       type: 'entreprise',
       imageUrl: 'assets/images/twomoro.jpg',
       websiteUrl: 'https://2moro.fr',
-      etablissementPresentation: '2MoRO est une entreprise éditrice de logiciel de maintenance pour l\'Aéronautique et la défense appartenant au Groupe Sopra Steria'
+      etablissementPresentation: '2MoRO est une entreprise éditrice de logiciel de maintenance pour l\'Aéronautique et la défense appartenant au Groupe Sopra Steria',
     },
     {
       id:'stage',
@@ -42,7 +42,10 @@ export class ExperienceService {
       description: 'Chez 2MoRO Sopra Steria Group à Bidart',
       type: 'entreprise',
       imageUrl: 'assets/images/twomoro.jpg',
-      websiteUrl: 'https://2moro.fr'
+      websiteUrl: 'https://2moro.fr',
+      etablissementPresentation: '2MoRO est une entreprise éditrice de logiciel de maintenance pour l\'Aéronautique et la défense appartenant au Groupe Sopra Steria',
+      travailEffectue: 'Lors de mon stage, j\'ai travaillé sur différents sujets comme le changement du type de données en base avec Postgresql ou la migration d\'hibernate HBM vers JPA en Java',
+      placeEntreprise: 'Durant le stage, j\'ai intégré l\'équipe Backend composé de deux autres personnes puis après une réorganisation, je suis passé dans la direction technique'
     },
     {
       id:'master',

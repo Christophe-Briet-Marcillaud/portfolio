@@ -11,6 +11,7 @@ export interface Competence {
   element_preuve: string;
   autocritique: string;
   evolution: string;
+  realisations: string[];
   imageUrl?: string; // Ajout de la propriété imageUrl
 }
 
@@ -56,7 +57,8 @@ export class CompetenceService {
         'Le passage à cette version supérieure de Spring me permettra d’apprendre les nouveautés présentes dans cette dernière, d’acquérir davantage de connaissances dans cette technologie et ainsi continuer d’améliorer mon niveau et ma maîtrise de Spring.\n' +
         'Je souhaiterai également apprendre à utiliser Spring Boot qui est une version plus condensée avec des fonctionnalités supplémentaires de Spring. \n' +
         'Afin d’approfondir mes compétences en Spring et remplir mon objectif d’apprendre Spring Boot, j’aimerai suivre cette formation en ligne : https://openclassrooms.com/fr/courses/6900101-creez-une-application-java-avec-spring-boot\n',
-      imageUrl: 'assets/images/spring.png'
+      imageUrl: 'assets/images/spring.png',
+      realisations: ['geosavior', 'aerowebb']
     },
     {
       id: 'hibernate',
@@ -93,18 +95,50 @@ export class CompetenceService {
       evolution: 'La prochaine étape dans mon utilisation d’Hibernate est de passer à la version 6 qui est la version majeure la plus récente lors de la rédaction de ces lignes.\n' +
         'Le passage à cette version supérieure d’Hibernate me permettra d’apprendre les nouveautés présentes dans cette dernière, d’acquérir davantage de connaissances dans cette technologie et ainsi continuer d’améliorer mon niveau et ma maîtrise d’Hibernate.\n' +
         'Afin de pouvoir approfondir davantage mes compétences en Hibernate, j’aimerai suivre cette formation en ligne : https://www.orsys.fr/formation-hibernate-mise-en-oeuvre-avancee.html afin de bien assimiler les concepts les plus avancés de ce Framework.\n',
-      imageUrl: 'assets/images/hibernate.png'
+      imageUrl: 'assets/images/hibernate.png',
+      realisations: ['link_n_trade','geosavior', 'aerowebb']
     },
     {
       id: 'angular',
       nom: 'Angular',
       type: 'technique',
       niveau: 'Intermédiaire',
-      definition: 'Développement d\'applications web modernes...',
-      element_preuve: 'Création d\'un portfolio interactif',
-      autocritique: 'Maîtrise Avancée mais besoin d\'approfondir...',
-      evolution: 'Passer la certification Angular Expert',
-      imageUrl: 'assets/images/angular.png'
+      definition: 'Angular est un Framework (ensemble de fonctionnalités qui servent à simplifier la construction et définir une architecture de l’application) basé sur le langage TypeScript et utilisé pour la partie frontend d’une application.\n' +
+        'Ce Framework permet de faciliter la création d’applications Web. Il offre une structure défini, une gestion des données et une navigation dans l’application. Il offre une solution rapide et solide à mettre en place.\n' +
+        'Angular est un Framework très populaire dans le développement web cependant il nécessite un minimum d’apprentissage et des connaissances de base en HTML,  CSS et Javascript pour l’utiliser.\n',
+      element_preuve: 'J’ai commencé mon apprentissage d’Angular lors de mon quatrième semestre. \n' +
+        'Etant un Framework utilisé pour le Frontend, je l’ai utilisé en parallèle de Java qui s’occupait de récupérer les données côté serveur.\n' +
+        'J’ai mis en pratique Angular pour la première fois lors du développement du projet Link & Trade durant mon quatrième semestre. \n' +
+        'Le but était de reproduire un site de vente type Vinted réservé à des lycéens. \n' +
+        'Durant ce projet, je me suis occupé de la partie affichage globale des annonces et le tri de ces dernières par catégorie (exemple : vêtements, livres, …). \n' +
+        'Afin de mettre l’affichage global, j’ai utilisé une boucle spécifique à Angular nommé « *ngFor ». Concernant le tri, je l’ai mis en place dans la partie affichage une condition prenant en paramètre le type de la catégorie lors du choix de l’utilisateur à l’aide d’une balise unique à Angular « *ngIf ». Ces deux balises permettent de lier du code html gérant uniquement l’affichage et d’y ajouter une logique avec TypeScript. \n' +
+        'J’ai également travaillé sur la page d’administration des annonces qui comportait différents onglets comme la validation des annonces, les annonces validées et les annonces refusées sur lesquels j’ai géré l’affichage de la même manière que cité au-dessus.\n' +
+        'Ensuite, lors de mon cinquième semestre, j’ai continué à travailler avec Angular sur le projet GeoSavior. Il avait pour but de réaliser une application mobile de sauvetage d’animaux marins. \n' +
+        'Cette application nécessitait un panel d’administration accessible sur le web par notre commanditaire. \n' +
+        'Mes camarades et moi avons décidé de réaliser ce panel administrateur avec Angular. \n' +
+        'M’étant occupé de la partie concernant les centres médicaux spécialisés dans les animaux marins, j’ai réalisé la page d’ajouts, suppression et mise à jour des informations de ces derniers. \n' +
+        'Dans la page d’ajouts et de mise à jour, j’ai réalisé un fichier service qui permettait de réaliser des appels aux différentes API que j’avais développé en Java pour permettre d’envoyer les données du formulaires au serveur. Ces formulaires contenaient une validation vérifiant la non-nullité des champs obligatoires et affichait une notification confirmant l’ajout ou la mise à jour. En ce qui concerne la suppression, j’ai ajouté une pop-up de confirmation qui demande si l’administrateur veut réellement supprimer ce centre médical. \n' +
+        'Pour réaliser cette pop-up et cette notification, j’ai crée un fichier Angular implémentant une librairie externe qui permettait de simplifier la création de ces dernières pour en faire un modèle que j’ai ensuite personnalisé dans chacun des cas dont j’ai parlé.\n' +
+        'Lors de mon stage et mon alternance chez 2MoRO, j’ai travaillé sur le logiciel Aero-Webb. \n' +
+        'J’ai développé un écran intermédiaire servant d’onglet à d’autres parties de la page qui permet de lancer un test de qualité de données. Lors de l’appui sur le bouton, un appel est lancé vers le serveur qui va lancer l’analyse de la base et renvoyer des informations ainsi qu’un PDF que j’ai rendu téléchargeable grâce à l’implémentation d’un attribut en Angular nommé « download ». \n' +
+        'J’ai ajouté plusieurs éléments améliorant l’ergonomie de la page comme un affichage de couleurs différentes selon le résultat du test, la désactivation des boutons lors du lancement du test et une icône indiquant le chargement pour que l’utilisateur ait une indication visuelle de l’action qu’il vient de lancer.\n' +
+        'Réaliser ces différents travaux m’a permis de gagner de l’expérience sur l’utilisation et la mise en place d’Angular et de me rendre compte qu’une fois que l’on sait l’utiliser c’est un Framework très puissant.\n',
+      autocritique: 'En tant que membre de l’équipe architecture, connaître le fonctionnement du Framework utilisé pour le Frontend de l’application est nécessaire à la compréhension des différentes missions que je peux être amené à réaliser. \n' +
+        'J’ai acquis une bonne maîtrise dans l’utilisation et la mise en place d’Angular grâce aux travaux variés que j’ai réalisé sur les différents projets. \n' +
+        'Link & Trade ainsi que GeoSavior m’ont permis de voir comment développer une application en partant de zéro et Aero-Webb m’a permis de découvrir de nouveaux composants en les implémentant et approfondir les parties que j’avais déjà apprises.\n' +
+        'J’ai pu utiliser Angular dans des projets de petite ou moyenne taille réalisés à l’école et sur une application plus complexe comme Aero-Webb. \n' +
+        'Cela m’a permis de voir qu’Angular étant du Frontend, il faut maîtriser le sens du design et comprendre comment rendre un site ergonomique. \n' +
+        'Etant plus habitué à travailler sur du Backend, Angular est une technologie que je maîtrise moins par rapport à d’autres comme Hibernate ou Spring. \n' +
+        'Cependant je suis capable de réaliser des applications de taille moyenne en autonomie. \n' +
+        'Ma première recommandation aux personnes souhaitant apprendre à utiliser Angular est d’abord de bien maîtriser les bases du javascript pour bien comprendre l’utilisation du TypeScript. \n' +
+        'Ensuite je conseille de lire la documentation présente sur le site officiel qui est complète et permet de mettre en place facilement l’environnement et de réaliser des tests avec des mini applications déjà prêtes. \n' +
+        'Mon dernier conseil est de bien réfléchir à la structure de l’application, des différentes pages composant le site web et de trouver les composants internes à Angular qui peuvent être implémentés pour faciliter le développement. \n',
+      evolution: 'La prochaine étape dans mon utilisation d’Angular sera de réaliser l’extension d’une page ou d’ajouter des fonctionnalités dans des parties déjà existantes. \n' +
+        'Etant développeur côté Backend, je n’ai aucune mission précise et régulière sur Angular dans mon travail. \n' +
+        'Il est prévu qu’Aero-Webb passe sous Angular 17 ce qui me permettra de découvrir de nouvelles fonctionnalités et de gérer le code différemment de celui que j’ai appris à l’école et également lors de mon arrivée chez 2MoRO.\n' +
+        'Afin d’approfondir mes compétences en Angular, je souhaiterai suivre cette formation en ligne : https://www.orsys.fr/formation-angular-developpement-avance.html\n',
+      imageUrl: 'assets/images/angular.png',
+      realisations: ['link_n_trade', 'geoSavior', 'aeroWebb']
     },
     {
       id: 'sql',
@@ -141,7 +175,8 @@ export class CompetenceService {
         'Je souhaiterai apprendre à gérer les triggers et les index plus efficacement et apprendre à faire des requêtes plus complexes que celle dont je suis capable actuellement afin de maîtriser encore davantage SQL. \n' +
         'Je voudrais également approfondir mes connaissances dans cette compétence pour être administrateur de base de données. \n' +
         'Afin d’approfondir mes compétences en SQL et remplir mon objectif, j’aimerai suivre cette formation en ligne : https://grafikart.fr/formations/apprendre-sql\n',
-      imageUrl: 'assets/images/sql.png'
+      imageUrl: 'assets/images/sql.png',
+      realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
     {
       id: 'git',
@@ -176,7 +211,8 @@ export class CompetenceService {
       evolution: 'La prochaine étape dans mon utilisation de GIT est de l’utiliser quotidiennement lors de mon travail chez 2MoRO.\n' +
         'Je souhaiterai approfondir mes connaissances sur la partie DevOps de GIT afin d’apprendre à automatiser davantage de développement et être plus polyvalent dans mon domaine. \n' +
         'Afin d’approfondir mes compétences en GIT et remplir mon objectif, j’aimerai suivre cette formation en ligne : https://www.learnthings.fr/meilleures-formations-sur-git/\n',
-      imageUrl: 'assets/images/git.png'
+      imageUrl: 'assets/images/git.png',
+      realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
     {
       id: 'marketing',
@@ -210,7 +246,8 @@ export class CompetenceService {
       evolution: 'La prochaine étape dans mon utilisation du marketing est de promouvoir l’entreprise dans laquelle je travaille. Je serai amené à discuter de l’entreprise avec d’autres personnes.\n' +
         'Afin de pouvoir approfondir mes connaissances en marketing, j’observe les différentes publications sur LinkedIn réalisées par la chargée de communication de mon entreprise, pour trouver le type le plus populaire.\n' +
         'Je n’ai pas de formation particulière pour approfondir mes compétences en marketing hormis suivre les tendances de communications des entreprises sur les réseaux sociaux professionnels ou la communication avec les clients.\n',
-      imageUrl: 'assets/images/marketing.png'
+      imageUrl: 'assets/images/marketing.png',
+      realisations: ['speedclean', 'gestion_presidence_bde']
     },
     {
       id: 'redaction_documentation',
@@ -238,7 +275,8 @@ export class CompetenceService {
         'Finalement, je conseille d’utiliser le langage Markdown pour écrire la documentation et de mettre en place l’outil mkdocs dans l’entreprise car ces deux outils permettent d’avoir une documentation bien mise en forme, accessible et navigable facilement par tout le monde.\n',
       evolution: 'La prochaine étape dans ma rédaction de documentation sera d’apprendre à mettre en place un environnement « Mkdocs » moi-même puis de continuer à rédiger de nouvelles documentations afin d’approfondir mes compétences en rédaction.\n' +
         'Afin d’apprendre à mettre en place Mkdocs, j’aimerai suivre cette formation en ligne : https://blog.stephane-robert.info/docs/documenter/mkdocs/\n',
-      imageUrl: 'assets/images/documentation.png'
+      imageUrl: 'assets/images/documentation.png',
+      realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
     {
       id: 'vulgarisation',
@@ -268,7 +306,8 @@ export class CompetenceService {
         'Mon dernier conseil est de préparer un support de présentation qui servira de soutien visuel à la vulgarisation.\n',
       evolution: 'La prochaine étape dans la vulgarisation de termes techniques est de continuer à réaliser des présentations sur des sujets techniques à mon chef de projet ou bien à d’autres équipes.\n' +
         'Afin d’approfondir mes compétences en vulgarisation, je me fait aider par mes collègues plus expérimentés qui me font part de leur manière de vulgariser des termes techniques.\n',
-      imageUrl: 'assets/images/vulgarisation.png'
+      imageUrl: 'assets/images/vulgarisation.png',
+      realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
     {
       id: 'methode_agile',
@@ -301,7 +340,8 @@ export class CompetenceService {
         'Mon dernier conseil est de faire valider au client de manière écrite et officielle les fonctionnalités déjà développées afin d’éviter des retours non prévus qui pourrait amener à des retards du côté des développeurs. \n',
       evolution: 'La prochaine étape dans mon utilisation de la méthode agile est de continuer à travailler avec cette méthode de pilotage lors de mes travaux sur Aero-Webb. \n' +
         'Afin d’approfondir mes compétences en pilotage de projet avec la méthode agile et être capable de diriger une équipe, j’aimerais suivre cette formation : https://www.orsys.fr/formations-methodes-agiles-scrum-agilepm-safe.html\n',
-      imageUrl: 'assets/images/agile.png'
+      imageUrl: 'assets/images/agile.png',
+      realisations: ['speedclean', 'gestion_presidence_bde']
     },
     {
       id: 'gestion_budget',
@@ -337,7 +377,8 @@ export class CompetenceService {
       evolution: 'Ma prochaine étape dans la gestion de budget est de continuer à pratiquer dans la vie courante afin d’approfondir mes connaissances et ma maîtrise de cette compétence en gérant au mieux mes achats.\n' +
         'Afin de pouvoir approfondir davantage mes compétences, je participe à des TeamStarter dans l’entreprise afin de gérer plusieurs projets proposés où la gestion de budget est nécessaire afin de calculer le montant nécessaire à sa réalisation.\n' +
         'Son utilisation dans la vie quotidienne est une formation complète et autonome.\n',
-      imageUrl: 'assets/images/budget.png'
+      imageUrl: 'assets/images/budget.png',
+      realisations: ['speedclean', 'gestion_presidence_bde']
     },
   ];
 

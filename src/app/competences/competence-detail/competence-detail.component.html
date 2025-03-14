@@ -30,4 +30,15 @@
     <h3>Évolution prévue</h3>
     <p>{{ competence?.evolution }}</p>
   </section>
+
+  <section class="realisations-section">
+    <h3>Réalisations associées</h3>
+    <ul>
+      <li *ngFor="let realisationId of competence.realisations">
+        <a [routerLink]="['/realisations', realisationId]">
+          {{ getRealisationName(realisationId) }}
+        </a>
+      </li>
+    </ul>
+  </section>
 </div>

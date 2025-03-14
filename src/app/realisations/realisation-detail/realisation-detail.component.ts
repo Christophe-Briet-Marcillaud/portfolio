@@ -40,10 +40,6 @@ export class RealisationDetailComponent implements OnInit {
     }
   }
 
-  replaceLineBreaks(text: string | undefined): string {
-    return text ? text.replace(/\n/g, '<br>') : '';
-  }
-
   getCompetenceName(competenceId: string): string {
     const competence = this.competenceService.getCompetenceById(competenceId);
     return competence ? competence.nom : 'Compétence inconnue';

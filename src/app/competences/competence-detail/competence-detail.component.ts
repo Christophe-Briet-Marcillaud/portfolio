@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Competence, CompetenceService } from '../service/competence.service';
 import { Subscription } from 'rxjs';
+import {RealisationService} from '../../realisations/service/realisation.service';
 
 @Component({
   selector: 'app-competence-detail',
@@ -15,7 +16,8 @@ export class CompetenceDetailComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
-    private competenceService: CompetenceService
+    private competenceService: CompetenceService,
+    private realisationService: RealisationService
   ) { }
 
   ngOnInit(): void {
@@ -37,5 +39,10 @@ export class CompetenceDetailComponent implements OnInit, OnDestroy {
       console.error(`Compétence avec l'ID ${id} non trouvée`);
       // Vous pouvez également rediriger l'utilisateur vers une page d'erreur ici
     }
+  }
+
+  getRealisationName(realisationId: string): string {
+    const realisation = this.realisationService.getRealisationById(realisationId);
+    return realisation ? realisation.titre : 'Réalisation inconnue';
   }
 }
