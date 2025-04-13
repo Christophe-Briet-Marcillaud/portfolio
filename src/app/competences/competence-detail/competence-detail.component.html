@@ -12,23 +12,23 @@
 
   <section class="competence-section">
     <h3>Définition</h3>
-    <pre>{{ competence?.definition }}</pre>
+    <div [innerHTML]="getCompetenceDefinition(competence)"></div>
   </section>
 
   <section class="competence-section">
     <h3>Éléments de preuve</h3>
-    <pre>{{ competence?.element_preuve }}</pre>
+    <div [innerHTML]="getCompetenceProof(competence)"></div>
   </section>
 
 
   <section class="competence-section">
     <h3>Autocritique</h3>
-    <pre>{{ competence?.autocritique }}</pre>
+    <div [innerHTML]="getCompetenceAutoCritic(competence)"></div>
   </section>
 
   <section class="competence-section">
     <h3>Évolution prévue</h3>
-    <pre>{{ competence?.evolution }}</pre>
+    <div [innerHTML]="getCompetenceEvolution(competence)"></div>
   </section>
 
   <section class="realisations-section">

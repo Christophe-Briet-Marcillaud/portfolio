@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Competence, CompetenceService } from '../service/competence.service';
 import { Subscription } from 'rxjs';
 import {RealisationService} from '../../realisations/service/realisation.service';
+import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-competence-detail',
@@ -17,7 +18,8 @@ export class CompetenceDetailComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private competenceService: CompetenceService,
-    private realisationService: RealisationService
+    private realisationService: RealisationService,
+    private sanitizer: DomSanitizer
   ) { }
 
   ngOnInit(): void {
@@ -31,6 +33,24 @@ export class CompetenceDetailComponent implements OnInit, OnDestroy {
     if (this.routeSub) {
       this.routeSub.unsubscribe();
     }
+  }
+  getSafeHtml(html: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
+  getCompetenceDefinition(competence: Competence): SafeHtml {
+    return this.getSafeHtml(competence.definition);
+  }
+
+  getCompetenceProof(competence: Competence): SafeHtml {
+    return this.getSafeHtml(competence.element_preuve);
+  }
+
+  getCompetenceAutoCritic(competence: Competence): SafeHtml {
+    return this.getSafeHtml(competence.autocritique);
+  }
+
+  getCompetenceEvolution(competence: Competence): SafeHtml {
+    return this.getSafeHtml(competence.evolution);
   }
 
   private loadCompetence(id: string): void {
