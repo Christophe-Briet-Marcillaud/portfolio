@@ -33,6 +33,8 @@ export class ExperienceService {
       imageUrl: 'assets/images/twomoro.jpg',
       websiteUrl: 'https://2moro.fr',
       etablissementPresentation: '2MoRO est une entreprise éditrice de logiciel de maintenance pour l\'Aéronautique et la défense appartenant au Groupe Sopra Steria',
+      travailEffectue: 'Lors de mon alternance, j\'ai continué le travail commencé durant mon stage comme la migration d\'hibernate HBM vers JPA en Java et j\'ai travaillé sur de nouveaux sujets comme la refonte du fonctionnement des exports de l\'application avec Spring Batch',
+      placeEntreprise: 'Durant l\'alternance, j\'ai continué à travailler dans l\'équipe de la Direction Technique. Suite à une autre réorganisation dans l\'entreprise, j\'ai intégré mon équipe actuelle, Technical Roadmap composée de trois autres personnes'
     },
     {
       id:'stage',
@@ -67,7 +69,8 @@ export class ExperienceService {
       description: 'À l\'École hôtelière de Biarritz',
       type: 'formation',
       imageUrl: 'assets/images/lycee.png',
-      websiteUrl: 'https://ecolehotelierebiarritz.fr'
+      websiteUrl: 'https://ecolehotelierebiarritz.fr',
+      etablissementPresentation: 'L\'école hôtelière de Biarritz est un lycée publique proposant diverses formations en rapport avec l\'hôtellerie, la restauration, le tourisme et la boulangerie/patisserie. Ces formations vont du bac pro au BTS.\nIl propose également une Mise à niveau en Hôtellerie-Restauration pour les personnes venant de Bac général et souhaitant réaliser un BTS.'
     },
     {
       id:'baccalaureat',
@@ -77,7 +80,8 @@ export class ExperienceService {
       description: 'Au Lycée Saint Joseph à Hasparren',
       type: 'formation',
       imageUrl: 'assets/images/lycee_bac.jpg',
-      websiteUrl: 'https://st-joseph-hasparren.fr'
+      websiteUrl: 'https://st-joseph-hasparren.fr',
+      etablissementPresentation: 'Le Lycée Saint Joseph à Hasparren est un lycée privé. Il propose des baccalauréats scientifiques, technologiques et professionnels dans le domaine du numérique ainsi que des BTS. Il propose aussi des formations professionnelles spécifiques pour l\'agriculture.'
     },
   ];
 

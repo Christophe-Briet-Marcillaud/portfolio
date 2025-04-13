@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {CompetenceService} from '../../competences/service/competence.service';
+import {Competence, CompetenceService} from '../../competences/service/competence.service';
 import {Realisation, RealisationService} from '../service/realisation.service';
 import {Subscription} from 'rxjs';
+import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
+import {getXHRResponse} from 'rxjs/internal/ajax/getXHRResponse';
 
 @Component({
   selector: 'app-realisation-detail',
@@ -16,7 +18,8 @@ export class RealisationDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private realisationService: RealisationService,
-    private competenceService: CompetenceService // Injection du service Competence
+    private competenceService: CompetenceService, // Injection du service Competence
+    private sanitizer: DomSanitizer
   ) { }
 
   ngOnInit(): void {
@@ -32,6 +35,34 @@ export class RealisationDetailComponent implements OnInit {
     }
   }
 
+  getSafeHtml(html: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
+  getRealisationPresentation(realisation: Realisation): SafeHtml {
+    return this.getSafeHtml(realisation.presentation);
+  }
+
+  getRealisationObjectives(realisation: Realisation): SafeHtml {
+    return this.getSafeHtml(realisation.objectifs);
+  }
+
+  getRealisationSteps(realisation: Realisation): SafeHtml {
+    return this.getSafeHtml(realisation.etapes);
+  }
+
+  getRealisationActors(realisation: Realisation): SafeHtml {
+    return this.getSafeHtml(realisation.acteurs);
+  }
+
+  getRealisationResults(realisation: Realisation): SafeHtml {
+    return this.getSafeHtml(realisation.resultats);
+  }
+  getRealisationTomorrows(realisation: Realisation): SafeHtml {
+    return this.getSafeHtml(realisation.lendemains);
+  }
+  getRealisationCritic(realisation: Realisation): SafeHtml {
+    return this.getSafeHtml(realisation.regardCritique);
+  }
   private loadRealisation(id: string): void {
     this.realisation = this.realisationService.getRealisationById(id);
     if (!this.realisation) {
@@ -44,4 +75,6 @@ export class RealisationDetailComponent implements OnInit {
     const competence = this.competenceService.getCompetenceById(competenceId);
     return competence ? competence.nom : 'Compétence inconnue';
   }
+
+  protected readonly getXHRResponse = getXHRResponse;
 }

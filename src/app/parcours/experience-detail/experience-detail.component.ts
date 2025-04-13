@@ -36,7 +36,6 @@ export class ExperienceDetailComponent {
     this.experience = this.experienceService.getExperienceById(id);
     if (!this.experience) {
       console.error(`Compétence avec l'ID ${id} non trouvée`);
-      // Vous pouvez également rediriger l'utilisateur vers une page d'erreur ici
     }
   }
 }

@@ -10,31 +10,31 @@
   <div class="realisation-content">
 
     <h3><u>Présentation</u> : </h3>
-    <pre>{{ realisation.presentation }}</pre>
+    <div [innerHTML]="getRealisationPresentation(realisation)"></div>
 
     <br>
     <h3><u>Objectifs</u> : </h3>
-    <pre>{{ realisation.objectifs }}</pre>
+    <div [innerHTML]="getRealisationObjectives(realisation)"></div>
 
     <br>
     <h3><u>Étapes</u> : </h3>
-    <pre>{{ realisation.etapes }}</pre>
+    <div [innerHTML]="getRealisationSteps(realisation)"></div>
 
     <br>
     <h3><u>Acteurs</u> : </h3>
-    <pre>{{ realisation.acteurs }}</pre>
+    <div [innerHTML]="getRealisationActors(realisation)"></div>
 
     <br>
     <h3><u>Résultats</u> : </h3>
-    <pre>{{ realisation.resultats }}</pre>
+    <div [innerHTML]="getRealisationResults(realisation)"></div>
 
     <br>
     <h3><u>Lendemain du projet</u> : </h3>
-    <pre>{{ realisation.lendemains }}</pre>
+    <div [innerHTML]="getRealisationTomorrows(realisation)"></div>
 
     <br>
     <h3><u>Ce que je retiens</u> : </h3>
-    <pre>{{ realisation.regardCritique }}</pre>
+    <div [innerHTML]="getRealisationCritic(realisation)"></div>
 
 
     <section class="realisation-section">

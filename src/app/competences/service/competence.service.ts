@@ -252,7 +252,7 @@ export class CompetenceService {
       evolution: 'La prochaine étape dans mon utilisation du <strong>marketing</strong> est de promouvoir l’entreprise dans laquelle je travaille. Je serai amené à discuter de l’entreprise avec d’autres personnes.\n' +
         'Afin de pouvoir approfondir mes connaissances en <strong>marketing</strong>, j’observe les différentes publications sur LinkedIn réalisées par la chargée de communication de mon entreprise, pour trouver le type le plus populaire.\n' +
         'Je n’ai pas de formation particulière pour approfondir mes compétences en <strong>marketing</strong> hormis suivre les tendances de communications des entreprises sur les <strong>réseaux sociaux</strong> professionnels ou la communication avec les clients.\n',
-      imageUrl: 'assets/images/<strong>marketing</strong>.png',
+      imageUrl: 'assets/images/marketing.png',
       realisations: ['speedclean', 'gestion_presidence_bde']
     },
     {
@@ -312,7 +312,7 @@ export class CompetenceService {
         'Mon dernier conseil est de préparer un support de présentation qui servira de soutien visuel à la <strong>vulgarisation</strong>.\n',
       evolution: 'La prochaine étape dans la <strong>vulgarisation</strong> de <strong>termes techniques</strong> est de continuer à réaliser des présentations sur des sujets techniques à mon chef de projet ou bien à d’autres équipes.\n' +
         'Afin d’approfondir mes compétences en <strong>vulgarisation</strong>, je me fait aider par mes collègues plus expérimentés qui me font part de leur manière de vulgariser des <strong>termes techniques</strong>.\n',
-      imageUrl: 'assets/images/<strong>vulgarisation</strong>.png',
+      imageUrl: 'assets/images/vulgarisation.png',
       realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
     {
