@@ -86,7 +86,7 @@ export class RealisationService {
         'J’ai pu découvrir le <strong>Framework</strong> <strong>Spring</strong> et ainsi expliquer à mes autres camarades qui se sont principalement occupés de l’affichage, le fonctionnement de ce <strong>Framework</strong> et l’efficacité qu’il apporte.\n' +
         'J’ai également pu implémenter la partie de sauvegarde de la géolocalisation hors ligne de l’application et ainsi les aider à monter en compétences sur le développement d’un mode sans connexion.\n' +
         'Je retiens de ce projet une bonne expérience de développement, une continuation de l’apprentissage du langage <strong>Java</strong> et du <strong>Framework</strong> <strong>Hibernate</strong> ainsi que la découverte du <strong>Framework</strong> <strong>Spring</strong> très utilisé en entreprise mais aussi la compréhension de la différence entre la logique d’un développement web et celle d’un développement <strong>mobile</strong>. \n',
-      competences: ['Spring', 'Hibernate', 'angular', 'SQL', 'vulgarisation', 'methode_agile', 'redaction_documentation', 'git'],
+      competences: ['spring', 'hibernate', 'angular', 'sql', 'vulgarisation', 'methode_agile', 'redaction_documentation', 'git'],
       imageUrl: 'assets/images/geosavior.png'
     },
     {
@@ -143,7 +143,7 @@ export class RealisationService {
       regardCritique: 'Etant intéressé par le traitement côté <strong>serveur</strong> (<strong>Backend</strong>), j’ai pris en charge une partie importante de celui-ci. Mes camarades étant plus attirés par le <strong>Frontend</strong> (côté client), cela leur a permis de se concentrer sur celui-ci. \n' +
         'J’ai également pu les aider à monter en compétences en leur expliquant la manière dont j’ai développé les différentes fonctionnalités sur lesquelles j’ai travaillé. \n' +
         'Je retiens de ce projet une bonne expérience et une entrée en matière pour le langage <strong>Java</strong> et le <strong>Framework</strong> <strong>Hibernate</strong> mais aussi sur l’importance de partir sur une <strong>base de données</strong> bien structurée afin de mener à bien un projet.\n',
-      competences: ['Hibernate', 'angular', 'SQL', 'vulgarisation', 'methode_agile', 'redaction_documentation', 'git'],
+      competences: ['hibernate', 'angular', 'sql', 'vulgarisation', 'methode_agile', 'redaction_documentation', 'git'],
       imageUrl: 'assets/images/linkntrade.png'
     },
     {
@@ -209,7 +209,7 @@ export class RealisationService {
         'J’ai ensuite aider à différentes études et mise en place de mesures de performance lors de mon passage dans la <strong>direction technique</strong>.\n' +
         'Finalement, je vais participer à la montée en version des <strong>Framework</strong> <strong>Hibernate</strong> et <strong>Spring</strong> sur <strong>Aero-Webb</strong> dans l’équipe Technical Roadmap.\n' +
         'Je retiens d’<strong>Aero-Webb</strong> un bon exemple de bonnes pratiques, un logiciel complexe sur lequel travailler est enrichissant au niveau technique mais également au niveau organisationnel.\n',
-      competences: ['Spring', 'Hibernate', 'angular', 'SQL', 'vulgarisation', 'methode_agile', 'redaction_documentation', 'git'],
+      competences: ['spring', 'hibernate', 'angular', 'sql', 'vulgarisation', 'methode_agile', 'redaction_documentation', 'git'],
       imageUrl: 'assets/images/aerowebb.jpg'
     },
     {
