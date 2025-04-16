@@ -30,8 +30,8 @@ export class RealisationService {
       presentation: '<strong>GeoSavior</strong> est une application <strong>mobile</strong> de secours des animaux marins en détresse réalisée pour l’<strong>association</strong> <strong>Sibylline Océans</strong> suite à une demande de <strong>Frédérique Cheyenne</strong>, directrice de cette <strong>association</strong>.\n' +
         'Cette application contient une partie formation où est expliqué le fonctionnement de l’application, ainsi que sa fonctionnalité principale : un questionnaire permettant de connaître l’urgence ou non de la situation et de lancer un appel au centre adapté ou au <strong>SDIS</strong>. \n' +
         'L’application contient également une partie statistiques sur les animaux sauvés ainsi qu’un panel administrateur réalisé en <strong>Angular</strong> afin de permettre à <strong>Mme Cheyenne</strong> de gérer le contenu de l’application.\n',
-      objectifs: 'L’objectif principal du projet est de permettre le <strong>sauvetage</strong> efficace et régulier des <strong>animaux marins échoués</strong> sur les plages françaises et dans le futur les plages d’autres pays en permettant des interventions r<strong>API</strong>des et adaptées à l’animal rencontré en appelant un centre vétérinaire capable de s’occuper de ce dernier.\n' +
-        'Un point important concernant le développement de cette application <strong>mobile</strong> est qu’elle soit claire et intuitive pour les utilisateurs car elle sera utilisée dans des cas spécifiques où l’animal devra être pris en charge r<strong>API</strong>dement afin de simplifier son <strong>sauvetage</strong>. \n' +
+      objectifs: 'L’objectif principal du projet est de permettre le <strong>sauvetage</strong> efficace et régulier des <strong>animaux marins échoués</strong> sur les plages françaises et dans le futur les plages d’autres pays en permettant des interventions rapides et adaptées à l’animal rencontré en appelant un centre vétérinaire capable de s’occuper de ce dernier.\n' +
+        'Un point important concernant le développement de cette application <strong>mobile</strong> est qu’elle soit claire et intuitive pour les utilisateurs car elle sera utilisée dans des cas spécifiques où l’animal devra être pris en charge rapidement afin de simplifier son <strong>sauvetage</strong>. \n' +
         'Un second point est qu’il est nécessaire d’avoir un mode hors ligne qui retient la dernière position géographique de l’utilisateur avant la perte de la connexion et ses réponses aux questions posés sur l’état de l’animal afin qu’il puisse appeler le centre médical adapté le plus proche lorsqu’il retrouve sa connexion.\n' +
         'Les enjeux de ce projet sont les suivants :\n' +
         'Pour <strong>Sibylline Océans</strong>, médiatiser davantage l’<strong>association</strong> afin que plus de personnes prennent conscience du nombre d’animaux marins en danger sur nos plages et ainsi permettre d’en sauver davantage.\n' +
@@ -44,7 +44,7 @@ export class RealisationService {
         'Une fois qu’une de nos maquettes a été validé, j’ai commencé la réalisation de cette dernière.\n' +
         'Lors de ce projet, j’ai principalement travaillé sur la partie <strong>Backend</strong> (côté <strong>serveur</strong>) de l’application développée en <strong>Java</strong> <strong>Android</strong> avec l’aide d’<strong>Hibernate</strong> pour le traitement côté <strong>base de données</strong> et de <strong>Spring</strong> pour les requêtes allant vers le <strong>serveur</strong>.\n' +
         'Dans cette partie <strong>Backend</strong>, j’ai développé des <strong>API</strong> avec l’aide de <strong>Spring</strong> qui permettent de réaliser différentes actions comme la sauvegarde de données en base, de la récupération de données, des mises à jour de ces mêmes données et la suppression de ces dernières. \n' +
-        'Ces <strong>API</strong>s sont des fonctions appelables par l’application <strong>mobile</strong> et le panel administrateur afin de réaliser les actions pour lesquelles ont été développées ces dernières.\n' +
+        'Ces <strong>APIs</strong> sont des fonctions appelables par l’application <strong>mobile</strong> et le panel administrateur afin de réaliser les actions pour lesquelles ont été développées ces dernières.\n' +
         'Afin de réaliser ce <strong>Backend</strong>, j’ai découpé la structure du projet en différents dossiers :\n' +
         '-\tLes <strong>models</strong> qui contiennent les classes représentant les objets en <strong>base de données</strong> comme les centres, les animaux ou les questions liées aux animaux à l’aide d’<strong>Hibernate</strong>.\n' +
         '\n' +
@@ -75,10 +75,10 @@ export class RealisationService {
         'La commanditaire du projet, <strong>Mme Cheyenne</strong>, présidente de <strong>l’<strong>association</strong> Sibylline Océans</strong> fut accompagnée par <strong>Mr Cédric Leroy</strong> travaillant chez <strong>Gandi</strong> (une plateforme d’hébergement en ligne). Nous avions des rendez-vous avec eux à la fin de chaque phase de développement lorsque <strong>Mme Cheyenne</strong> était disponible ce qui s’avérait assez difficile au vu de son emploi du temps chargé. L’objectif de ces créneaux était de présenter l’avancement de l’application, recueillir leurs avis et permettre de modifier l’application selon leurs besoins.\n',
       resultats: 'Le projet a été mené à bien et livré à la commanditaire. \n' +
         'Elle a décidé de médiatiser l’application pour permettre le <strong>sauvetage</strong> simplifié des animaux marins.\n' +
-        'Le projet m’a permis de monter en compétence sur les <strong>Framework</strong> <strong>Hibernate</strong> et <strong>Spring</strong> de <strong>Java</strong> en travaillant sur le <strong>Backend</strong> de l’application, en <strong>Java</strong> <strong>Android</strong> en travaillant sur les fonctionnalités de l’application <strong>mobile</strong> et en <strong>Angular</strong> lors de ma participation sur le panel administrateur.\n' +
+        'Le projet m’a permis de monter en compétence sur les <strong>Framework</strong> <strong>Hibernate</strong> et <strong>Spring</strong> de <strong>Java</strong> en travaillant sur le <strong>Backend</strong> de l’application, en <strong>Java</strong> <strong>Android</strong> en travaillant sur les fonctionnalités de l’<strong>application mobile</strong> et en <strong>Angular</strong> lors de ma participation sur le panel administrateur.\n' +
         'Cela a également conforté mon attirance dans le développement pour le <strong>Backend</strong> plutôt que le <strong>Frontend</strong> que ce soit <strong>mobile</strong> ou web. \n' +
         'J’ai pu aussi améliorer mon aisance à l’oral et mieux vulgariser les termes les plus techniques afin de me faire comprendre grâce aux explications détaillées et simplifiées ce qui a aidé à la compréhension de <strong>Mme Cheyenne</strong> qui n’avait aucune compétence dans le domaine de l’informatique.\n' +
-        'Si je devais refaire ce projet différemment, je commencerais par réfléchir au mode hors ligne plus r<strong>API</strong>dement dans le projet car il représente un point très important sur lequel j’ai dû adapter certaines parties du développement qui auraient pu être gérées dès le début.\n' +
+        'Si je devais refaire ce projet différemment, je commencerais par réfléchir au mode hors ligne plus rapidement dans le projet car il représente un point très important sur lequel j’ai dû adapter certaines parties du développement qui auraient pu être gérées dès le début.\n' +
         'J’améliorerais également la partie statistique pour permettre de la personnaliser selon plusieurs critères ce qui permettrait un engouement supplémentaire auprès des utilisateurs.\n',
       lendemains: 'Lors de la finalisation du projet et son rendu aux commanditaires, nous avons discuté de la mise en place de l’application sur les <strong>serveur</strong>s de « Gandi » et sa disponibilité sur le Play store <strong>Android</strong> afin qu’elle soit accessible auprès du grand public sur tous les téléphones <strong>Android</strong>.\n' +
         '<strong>Mme Cheyenne</strong> et Mr Leroy devaient s’occuper de cette partie et souhaitaient également potentiellement réaliser une version IOS (Apple) de l’application pour qu’elle soit utilisable par un plus grand nombre de personnes.\n',
@@ -157,7 +157,7 @@ export class RealisationService {
         'Il contient également une partie gestion des ressources humaines qui est beaucoup moins importante en taille que le reste de l’application. Une gestion des droits est également implémentée.\n',
       objectifs: 'L’objectif principal du produit est de permettre la maintenance des avions, le suivi des vols et la planification des ressources.\n' +
         'Un point important concernant le développement de cette application est qu’elle contienne plusieurs niveaux de droits pour les techniciens, pilote ou administrateur qui n’auront pas accès aux même écrans. \n' +
-        'Un second point nécessite d’avoir une performance optimale afin de permettre une gestion en temps réel la plus r<strong>API</strong>de possible.\n' +
+        'Un second point nécessite d’avoir une performance optimale afin de permettre une gestion en temps réel la plus rapide possible.\n' +
         'Les enjeux de ce projet sont les suivants :\n' +
         'Pour <strong>2MoRO</strong>, produire des revenus et potentiellement vendre le projet à d’autres clients pour faire de nouveaux bénéfices.\n' +
         'Pour moi, de monter en compétence sur la technique avec le développement en <strong>Java</strong>, sur l’utilisation des <strong>Framework</strong> <strong>Spring</strong> et <strong>Hibernate</strong> dans un contexte professionnel pour la partie <strong>serveur</strong> et un développement technique plus léger sur <strong>Angular</strong> lors du travail sur des écrans déjà existants.\n' +
@@ -184,7 +184,7 @@ export class RealisationService {
         'J’ai migré une partie des méthodes <strong>JPA</strong> moi-même avant de passer sur d’autres sujets. \n' +
         'Cependant, afin que d’autres développeurs puissent travailler sur cette migration, j’ai rédigé une documentation complète sur la migration d’<strong>Hibernate</strong> natif vers <strong>JPA</strong>. \n' +
         'Cette documentation comporte une explication du fonctionnement des méthodes <strong>JPA</strong>, un exemple d’avant et après migration pour chaque cas pouvant être rencontré sur <strong>Aero-Webb</strong> ainsi que différents cas particuliers rencontrés lors de mes migrations.\n' +
-        'J’ai travaillé avec <strong>Spring</strong> sur des sujets assez r<strong>API</strong>des comme la mise en place de « <strong>Spring Profile</strong> » qui permet de conditionner le passage dans une partie du code en activant ou non un profile dans le paramétrage du <strong>serveur</strong> Tomcat. Dans mon cas, la partie conditionnée est un code d’analyse des performances qui consommait de la mémoire inutilement. \n' +
+        'J’ai travaillé avec <strong>Spring</strong> sur des sujets assez rapides comme la mise en place de « <strong>Spring Profile</strong> » qui permet de conditionner le passage dans une partie du code en activant ou non un profile dans le paramétrage du <strong>serveur</strong> Tomcat. Dans mon cas, la partie conditionnée est un code d’analyse des performances qui consommait de la mémoire inutilement. \n' +
         'Mais aussi sur des sujets plus imposants comme la refonte des exports de données d’<strong>Aero-Webb</strong> avec <strong>Spring Batch</strong> afin d’améliorer les performances et la stabilité des exports qui parfois n’arrivaient pas à termes. \n' +
         'J’ai créé trois types de classes, les Reader qui vont lire les données en base, les Processor qui vont transformer les données <strong>Java</strong> en objet exportable en xml et le Writer qui va écrire les données transformées dans un fichier. \n' +
         'Grâce à ces trois classes et une implémentation particulière, <strong>Spring Batch</strong> permet de travailler par lot de données définies dans la configuration d’un Job représentant le traitement complet que <strong>Spring</strong> Batch va effectuer. \n' +
@@ -299,14 +299,14 @@ export class RealisationService {
       etapes: 'J’ai commencé par réaliser une réunion avec <strong>Cédric Philippot</strong> qui avais pris la relève du <strong>BDE</strong> lors de ' +
         'son abandon par les étudiants précédents afin que je puisse reprendre son poste de président du <strong>BDE</strong> ' +
         'général. ' +
-        'Une fois cette réunion faite et les p<strong>API</strong>ers officiels envoyés par Cédric, j’ai pu commencer mon travail ' +
+        'Une fois cette réunion faite et les papiers officiels envoyés par Cédric, j’ai pu commencer mon travail ' +
         'de président du <strong>BDE</strong> général.\n\n' +
         'J’ai commencé par mettre à jour la situation avec la banque en indiquant que j’étais le nouveau ' +
         'président de l’<strong>association</strong> à notre responsable banquière.\n' +
         'J’ai eu plusieurs appels avec la personne en charge du compte afin de réinitialiser les différents accès ' +
         'et de relancer le compte général ce qui m’a permis de redistribuer l’argent restant entre les différents ' +
         'campus pour qu’ils aient une base financière pour leurs activités.\n\n' +
-        'J’ai ensuite réalisé les p<strong>API</strong>ers nécessaires à la reconnaissance du <strong>BDE</strong> général comme une <strong>association</strong> ' +
+        'J’ai ensuite réalisé les papiers nécessaires à la reconnaissance du <strong>BDE</strong> général comme une <strong>association</strong> ' +
         'officielle avec l’aide du trésorier et du secrétaire du <strong>BDE</strong> général qui étaient également des étudiants ' +
         'du campus de Dax. ' +
         'Une fois toute la partie administrative extérieur du <strong>BDE</strong> général gérée, j’ai organisé une assemblée ' +
@@ -368,7 +368,7 @@ export class RealisationService {
         'J’ai également pu approfondir mes compétences en <strong>gestion de budget</strong> avec l’aide apporté à la gestion ' +
         'de la trésorerie sur Dax.\n' +
         'Si je devais reprendre la présidence du <strong>BDE</strong> différemment, je commencerais par m’occuper de la ' +
-        'partie administrative plus r<strong>API</strong>dement et m’impliquerai davantage dans le suivi des activités des ' +
+        'partie administrative plus rapidement et m’impliquerai davantage dans le suivi des activités des ' +
         'autres campus en organisant des points réguliers avec chaque président de campus.',
       lendemains: 'Lors de mon départ en stage, j’ai organisé de nouvelles élections afin que le <strong>BDE</strong> puisse continuer ' +
         'd’exister, c’est la promotion suivant la nôtre qui a été élue pour continuer à présider le <strong>BDE</strong> général.\n' +
