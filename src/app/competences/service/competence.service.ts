@@ -56,7 +56,7 @@ export class CompetenceService {
       evolution: 'La prochaine étape dans mon utilisation de <strong>Spring</strong> est de passer à la version six qui est la version majeure la plus récente lors de la rédaction de ces lignes.\n' +
         'Le passage à cette version supérieure de <strong>Spring</strong> me permettra d’apprendre les nouveautés présentes dans cette dernière, d’acquérir davantage de connaissances dans cette technologie et ainsi continuer d’améliorer mon niveau et ma maîtrise de <strong>Spring</strong>.\n' +
         'Je souhaiterai également apprendre à utiliser <strong>Spring Boot</strong> qui est une version plus condensée avec des fonctionnalités supplémentaires de <strong>Spring</strong>. \n' +
-        'Afin d’approfondir mes compétences en <strong>Spring</strong> et remplir mon objectif d’apprendre <strong>Spring Boot</strong>, j’aimerai suivre cette formation en ligne : https://openclassrooms.com/fr/courses/6900101-creez-une-application-java-avec-spring-boot\n',
+        'Afin d’approfondir mes compétences en <strong>Spring</strong> et remplir mon objectif d’apprendre <strong>Spring Boot</strong>, j’aimerai suivre cette formation en ligne : <a href="https://openclassrooms.com/fr/courses/6900101-creez-une-application-java-avec-spring-boot">https://openclassrooms.com/fr/courses/6900101-creez-une-application-java-avec-spring-boot</a>\n',
       imageUrl: 'assets/images/spring.png',
       realisations: ['geosavior', 'aerowebb']
     },
@@ -94,7 +94,7 @@ export class CompetenceService {
         'Finalement, je conseille de connaître et de savoir utiliser <strong>SQL</strong> dans son ensemble pour bien comprendre le fonctionnement derrière <strong>Hibernate</strong>.\n',
       evolution: 'La prochaine étape dans mon utilisation d’<strong>Hibernate</strong> est de passer à la version 6 qui est la version majeure la plus récente lors de la rédaction de ces lignes.\n' +
         'Le passage à cette version supérieure d’<strong>Hibernate</strong> me permettra d’apprendre les nouveautés présentes dans cette dernière, d’acquérir davantage de connaissances dans cette technologie et ainsi continuer d’améliorer mon niveau et ma maîtrise d’<strong>Hibernate</strong>.\n' +
-        'Afin de pouvoir approfondir davantage mes compétences en <strong>Hibernate</strong>, j’aimerai suivre cette formation en ligne : https://www.orsys.fr/formation-hibernate-mise-en-oeuvre-avancee.html afin de bien assimiler les concepts les plus avancés de ce <strong>Framework</strong>.\n',
+        'Afin de pouvoir approfondir davantage mes compétences en <strong>Hibernate</strong>, j’aimerai suivre cette formation en ligne : <a href="https://www.orsys.fr/formation-hibernate-mise-en-oeuvre-avancee.html">https://www.orsys.fr/formation-hibernate-mise-en-oeuvre-avancee.html</a> afin de bien assimiler les concepts les plus avancés de ce <strong>Framework</strong>.\n',
       imageUrl: 'assets/images/hibernate.png',
       realisations: ['link_n_trade','geosavior', 'aerowebb']
     },
@@ -142,7 +142,7 @@ export class CompetenceService {
       evolution: 'La prochaine étape dans mon utilisation d’<strong>Angular</strong> sera de réaliser l’extension d’une page ou d’ajouter des fonctionnalités dans des parties déjà existantes. \n' +
         'Etant <strong>développeur</strong> côté Backend, je n’ai aucune mission précise et régulière sur <strong>Angular</strong> dans mon travail. \n' +
         'Il est prévu qu’<a href="/portfolio/realisations/aerowebb">Aero-Webb</a> passe sous <strong>Angular</strong> 17 ce qui me permettra de découvrir de nouvelles fonctionnalités et de gérer le code différemment de celui que j’ai appris à l’école et également lors de mon arrivée chez 2MoRO.\n' +
-        'Afin d’approfondir mes compétences en <strong>Angular</strong>, je souhaiterai suivre cette formation en ligne : https://www.orsys.fr/formation-angular-developpement-avance.html\n',
+        'Afin d’approfondir mes compétences en <strong>Angular</strong>, je souhaiterai suivre cette formation en ligne : <a href="https://www.orsys.fr/formation-angular-developpement-avance.html">https://www.orsys.fr/formation-angular-developpement-avance.html</a>\n',
       imageUrl: 'assets/images/angular.png',
       realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
@@ -216,7 +216,7 @@ export class CompetenceService {
         'Mon dernier conseil est de se renseigner sur le fonctionnement de la partie <strong>DevOps</strong> comme la gestion des pipelines, le déploiement automatique et tout ce qui concerne l’automatisation car c’est un gain de temps non négligeable offert par <strong>GIT</strong>.\n',
       evolution: 'La prochaine étape dans mon utilisation de <strong>GIT</strong> est de l’utiliser quotidiennement lors de mon travail chez 2MoRO.\n' +
         'Je souhaiterai approfondir mes connaissances sur la partie <strong>DevOps</strong> de <strong>GIT</strong> afin d’apprendre à automatiser davantage de développement et être plus polyvalent dans mon domaine. \n' +
-        'Afin d’approfondir mes compétences en <strong>GIT</strong> et remplir mon objectif, j’aimerai suivre cette formation en ligne : https://www.learnthings.fr/meilleures-formations-sur-git/\n',
+        'Afin d’approfondir mes compétences en <strong>GIT</strong> et remplir mon objectif, j’aimerai suivre cette formation en ligne : <a href="https://www.learnthings.fr/meilleures-formations-sur-git">https://www.learnthings.fr/meilleures-formations-sur-git</a>/\n',
       imageUrl: 'assets/images/git.png',
       realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
@@ -280,7 +280,7 @@ export class CompetenceService {
         'Mon deuxième conseil est de se baser sur la documentation déjà existante dans l’entreprise. Si aucune documentation n’est présente, prendre des exemples en ligne pour acquérir des idées.\n' +
         'Finalement, je conseille d’utiliser le langage Markdown pour écrire la documentation et de mettre en place l’outil mkdocs dans l’entreprise car ces deux outils permettent d’avoir une documentation bien mise en forme, accessible et navigable facilement par tout le monde.\n',
       evolution: 'La prochaine étape dans ma <strong>rédaction de documentation</strong> sera d’apprendre à mettre en place un environnement <strong>« Mkdocs »</strong> moi-même puis de continuer à rédiger de nouvelles <strong>documentations</srong> afin d’approfondir mes compétences en rédaction.\n' +
-        'Afin d’apprendre à mettre en place Mkdocs, j’aimerai suivre cette formation en ligne : https://blog.stephane-robert.info/docs/documenter/mkdocs/\n',
+        'Afin d’apprendre à mettre en place Mkdocs, j’aimerai suivre cette formation en ligne : <a href="https://blog.stephane-robert.info/docs/documenter/mkdocs/">https://blog.stephane-robert.info/docs/documenter/mkdocs/</a>\n',
       imageUrl: 'assets/images/documentation.png',
       realisations: ['link_n_trade', 'geosavior', 'aerowebb']
     },
@@ -345,7 +345,7 @@ export class CompetenceService {
         'Ma deuxième recommandation est de bien chiffrer chaque fonctionnalité pour les répartir de manière optimale entre les différents sprints et ainsi éviter de prendre du retard sur ce qui est fourni au client.  \n' +
         'Mon dernier conseil est de faire valider au client de manière écrite et officielle les fonctionnalités déjà développées afin d’éviter des retours non prévus qui pourrait amener à des retards du côté des développeurs. \n',
       evolution: 'La prochaine étape dans mon utilisation de la <strong>méthode agile</strong> est de continuer à travailler avec cette méthode de pilotage lors de mes travaux sur <a href="/portfolio/realisations/aerowebb">Aero-Webb</a>. \n' +
-        'Afin d’approfondir mes compétences en pilotage de projet avec la <strong>méthode agile</strong> et être capable de diriger une équipe, j’aimerais suivre cette formation : https://www.orsys.fr/formations-methodes-agiles-scrum-agilepm-safe.html\n',
+        'Afin d’approfondir mes compétences en pilotage de projet avec la <strong>méthode agile</strong> et être capable de diriger une équipe, j’aimerais suivre cette formation : <a href="https://www.orsys.fr/formations-methodes-agiles-scrum-agilepm-safe.html">https://www.orsys.fr/formations-methodes-agiles-scrum-agilepm-safe.html</a>\n',
       imageUrl: 'assets/images/agile.png',
       realisations: ['speedclean', 'gestion_presidence_bde']
     },
