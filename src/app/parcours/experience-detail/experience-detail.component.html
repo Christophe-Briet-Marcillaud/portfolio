@@ -27,6 +27,12 @@
       <p>{{ experience.placeEntreprise }}</p>
     </div>
 
+    <div *ngIf="experience.type === 'entreprise'">
+      <section class="realisations-section">
+        <h3>Réalisations associées</h3>
+        <a href="/portfolio/realisations/aerowebb">Aero-Webb</a>
+      </section>
+    </div>
     <div *ngIf="experience.websiteUrl">
       <a [href]="experience.websiteUrl" target="_blank" rel="noopener noreferrer" class="website-button">
         Visiter le site web

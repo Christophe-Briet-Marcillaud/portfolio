@@ -11,6 +11,7 @@ export interface Experience {
   type: 'entreprise' | 'formation';
   imageUrl: string;
   websiteUrl?: string; // NEW: Optional link to a website
+  realisationLink?:string
   etablissementPresentation?: string; // Presentation of the establishment (for formations)
   travailEffectue?: string;         // Work done (for companies)
   placeEntreprise?: string;        // Place in the company (for companies)
